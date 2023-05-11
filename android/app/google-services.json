@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "600106409191",
+    "firebase_url": "https://mpxoxo-fada0-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "mpxoxo-fada0",
+    "storage_bucket": "mpxoxo-fada0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:600106409191:android:330ff5fbbbc6f2b7001642",
+        "android_client_info": {
+          "package_name": "com.example.xo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "600106409191-8k8sif0esm9c9rq8c5br4btfd5767q7m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYUV5IMaBSlQf1fNQOhAz1ewE2vJPuBsU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "600106409191-8k8sif0esm9c9rq8c5br4btfd5767q7m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
