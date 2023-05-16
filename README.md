@@ -40,11 +40,11 @@ Game XO page
 
 Game Result 
 
-<img width="360" alt="Screen Shot 2566-05-16 at 09 36 19" src="https://github.com/BoonyaSom/XO/assets/111370795/55e948cc-4a96-4279-a169-a18b586b4f9c">
+<img width="200" alt="Screen Shot 2566-05-16 at 09 36 19" src="https://github.com/BoonyaSom/XO/assets/111370795/55e948cc-4a96-4279-a169-a18b586b4f9c">
 
 
 Game History Real-Time board
 
-<img width="357" alt="Screen Shot 2566-05-16 at 09 36 31" src="https://github.com/BoonyaSom/XO/assets/111370795/126d0c74-ce95-405d-8a4c-e541e28c3103">
+<img width="200" alt="Screen Shot 2566-05-16 at 09 36 31" src="https://github.com/BoonyaSom/XO/assets/111370795/126d0c74-ce95-405d-8a4c-e541e28c3103">
 
 
