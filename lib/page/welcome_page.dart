@@ -24,7 +24,7 @@ class WelcomePage extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Image.asset('image/logo.png'),
+          Image.asset('assets/image/logo.png'),
           CustomButton(
             onTap: () => create(context),
             text: 'Create Room',

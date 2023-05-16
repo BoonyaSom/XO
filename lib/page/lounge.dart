@@ -1,6 +1,9 @@
 import 'package:firebase_database/firebase_database.dart';
+import 'dart:async';
 import 'package:firebase_database/ui/firebase_animated_list.dart';
 import 'package:flutter/material.dart';
+import 'package:xo/page/join_page.dart';
+import 'package:xo/page/scoreboard.dart';
 import 'package:xo/widgets/custom_buttom.dart';
 import 'package:xo/widgets/custome_text.dart';
 import 'package:xo/widgets/custom_textfield.dart';
@@ -19,28 +22,53 @@ class Lounge extends StatefulWidget {
 
 class _LoungeState extends State<Lounge> {
   late DatabaseReference dbRef;
-  late String roomId;
-  late int counter;
+  int? counter;
+
+ 
 
   @override
   void initState() {
     super.initState();
-    dbRef = FirebaseDatabase.instance.ref().child('games');
+    dbRef = FirebaseDatabase.instance.ref().child('room').child('games');
+    dbRef.child('room').child('counter').onValue.listen((event) {
+      var snapshot = event.snapshot;
+      if(snapshot.value != null){
+        setState(() {
+          counter = event.snapshot.value as int?;
+          print("current: $counter");
+            if(counter == 2){
+              //route to the scoreboard.dart
+              ScaffoldMessenger.of(context).showSnackBar(
+                const SnackBar(content: Text('someone has join the room!'),
+                duration: Duration(seconds: 45),)
+              ); /*FirebaseAnimatedList(
+  query: dbRef.child('room'),
+  itemBuilder: (BuildContext context, DataSnapshot snapshot, Animation<double> animation, int index) {
+    Map dataMap = snapshot.value as Map;
+    return ListTile(
+      title: Text(dataMap['title']),
+      subtitle: Text(dataMap['subtitle']),
+      // add more widgets to display other data as needed
+    );
+  },
+);*/
+          }
+        });
+      }
+      
+      
+    });
   }
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
-    final args = ModalRoute.of(context)!.settings.arguments;
-    if (args != null) {
-      roomId = args as String;
-    }
+
 
     return Scaffold(
         appBar: AppBar(
           title: Container(
             child: Image.asset(
-              'image/logo.png',
+              'assets/image/logo.png',
               scale: 4,
             ),
           ),
@@ -53,6 +81,7 @@ class _LoungeState extends State<Lounge> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: const [
               CustomText(text: 'wait for other to join...', fontSize: 20),
+              //CustomText(text: 'current player in the room ${counter.toString()}', fontSize: 15),
             ],
           ),
         ));

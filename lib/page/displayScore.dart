@@ -32,7 +32,7 @@ class _displayScoreState extends State<displayScore> {
         appBar: AppBar(
           title: Container(
             child: Image.asset(
-              'image/logo.png',
+              'assets/image/logo.png',
               scale: 4,
             ),
           ),

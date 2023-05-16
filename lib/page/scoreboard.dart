@@ -111,8 +111,10 @@ void initState() {
                 String playerX = widget.playerNameX;
                 String playerO = widget.playerNameY;
                 dbRef.push().set({
-                  '$playerX': scoreX,
-                  '$playerO': scoreO,
+                  'playerX': playerX,
+                  'playerO': playerO,
+                  'scoreX': scoreX,
+                  'scoreO': scoreO,
                 });
                 _clearBoard();
                 Navigator.pushNamed(context, WelcomePage.routeName);
