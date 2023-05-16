@@ -1,16 +1,12 @@
-# xo
+# Multiplayer game: Tic-tac-toe 
+The main objective of creating a Tic-Tac-Toe game is:
+- To create a functional application that allows users to play tic-tac-toe in real time.
+- To implement a notification when the game reaches the end.
+- To be able to handle invalid user input.
+- To keep the record for the player score in each round.
+- To provide a user-friendly interface that is simplest for the user to play the game.
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Members
+Miss Boonyaporn kampang                    
+Miss busaRIn jensai			   
+Miss pantaree prasongsuk		   
