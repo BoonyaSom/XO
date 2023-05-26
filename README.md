@@ -5,6 +5,7 @@ The main objective of creating a Tic-Tac-Toe game is:
 - To be able to handle invalid user input.
 - To keep the record for the player score in each round.
 - To provide a user-friendly interface that is simplest for the user to play the game.
+Using Flutter, dart, Firebase(Realtime database) for develop the project
 
 # Members
 Miss Boonyaporn kampang                    
